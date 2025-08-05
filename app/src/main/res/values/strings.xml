@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Synergos</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="no_internet">No internet connection.\n Go to device settings and connect to network</string>
+
+
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="service_type_array">
+        <item>B2B</item>
+        <item>B2C</item>
+    </string-array>
+
+    <string-array name="service_category_array">
+        <item>Pest Control</item>
+        <item>Cleaning</item>
+        <item>Plumbing</item>
+        <item>Electrical</item>
+    </string-array>
+
+</resources>
+
+

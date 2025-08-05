@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <AutoCompleteTextView
+        android:id="@+id/etEditType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Metric type (e.g. Steps)"
+        android:inputType="none" />
+
+    <EditText
+        android:id="@+id/etEditValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Value"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:text="Update"
+        android:textColor="@color/white"
+        android:layout_marginTop="12dp" />
+</LinearLayout>

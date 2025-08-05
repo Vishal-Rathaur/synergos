@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.viewdata.ViewData"
+    android:orientation="vertical">
+
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_marginTop="@dimen/_5sdp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="@dimen/_38sdp"
+        android:weightSum="3">
+
+        <Button
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/btnFilterMorning"
+            android:text="Morning"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_9ssp"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            />
+
+        <Button
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/btnFilterAfternoon"
+            android:text="Afternoon"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:textSize="@dimen/_9ssp"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            />
+
+        <Button
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/btnevening"
+            android:text="Evening"
+            android:textSize="@dimen/_9ssp"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="@dimen/_38sdp"
+        android:weightSum="3">
+
+        <Button
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/btnSortAsc"
+            android:text="Sort ASC"
+            android:layout_weight="1"
+            android:textSize="@dimen/_9ssp"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_6sdp"/>
+
+        <Button
+            android:id="@+id/btnSortDesc"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text="Sort DESC"
+            android:textSize="@dimen/_9ssp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_6sdp"/>
+
+        <Button
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/btnClearFilter"
+            android:text="Clear Filter"
+            android:textSize="@dimen/_9ssp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_12sdp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="@dimen/_38sdp"
+        android:weightSum="1">
+
+        <Button
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/btnAdd"
+            android:text="Add"
+            android:textSize="@dimen/_10ssp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_weight="1"
+        android:nestedScrollingEnabled="false"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
